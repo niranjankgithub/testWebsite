@@ -5,7 +5,6 @@ pipeline {
         stage('SCM Checkout') {
             steps {
                 echo 'Run the static analysis to the code'
-                git "https://github.com/niranjankgithub/testWebsite"
             }
         }
         stage('Compile') {
