@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code'
-                sh './gradlew clean test'
+            script {
+                       echo 'Run unit tests from the source code'
+                       sh './gradlew clean test'
+                    }
+
             }
         }
     }
