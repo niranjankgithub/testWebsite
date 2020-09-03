@@ -6,7 +6,7 @@ pipeline {
             steps {
             script {
                        echo 'Run unit tests from the source code'
-                       sh './gradlew clean test'
+                       bat 'gradlew clean test'
                     }
 
             }
