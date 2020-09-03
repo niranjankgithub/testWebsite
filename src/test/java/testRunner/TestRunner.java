@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "C:\\Users\\Administrator\\IdeaProjects\\SeleniumGradle\\src\\test\\resources\\Features\\OrangeHRM.feature",
                  glue={"stepDefinitions"},
-                 plugin = {"pretty", "html:target/cucumber-reports/reports.html", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+                 plugin = {"pretty", "html:target/cucumber-reports/reports.html"},
                  monochrome = true)
 
 public class TestRunner {
