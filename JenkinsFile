@@ -2,9 +2,10 @@
 pipeline {
     agent any 
     stages {
-        stage('Static Analysis') {
+        stage('SCM Checkout') {
             steps {
-                echo 'Run the static analysis to the code' 
+                echo 'Run the static analysis to the code'
+                git "https://github.com/niranjankgithub/testWebsite"
             }
         }
         stage('Compile') {
@@ -19,7 +20,8 @@ pipeline {
         }
         stage('Run Unit Tests') {
             steps {
-                echo 'Run unit tests from the source code' 
+                echo 'Run unit tests from the source code'
+                sh "gradlew clean test"
             }
         }
         stage('Run Integration Tests') {
