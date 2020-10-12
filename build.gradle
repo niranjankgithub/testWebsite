@@ -27,13 +27,26 @@ dependencies {
     implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '5.3.1'
     implementation group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.6'
     implementation group: 'com.aventstack', name: 'extentreports', version: '4.0.9'
+    implementation group: 'com.intuit.karate', name: 'karate-apache', version: '0.9.6'
+    implementation group: 'com.intuit.karate', name: 'karate-junit4', version: '0.9.6'
+
+
 
 
 }
 
-/*
+
 test{
-    useTestNG(){
-        suites 'testng.xml'
-    }
-}*/
+   /* useTestNG(){
+        suites 'src/test/resources/testng.xml'
+    }*/
+
+//        include 'testRunner'
+//        // pull karate options into the runtime
+//        systemProperty "karate.options", System.properties.getProperty("karate.options")
+//        // pull karate env into the runtime
+//        systemProperty "karate.env", System.properties.getProperty("karate.env")
+//        // ensure tests are always run
+//        outputs.upToDateWhen { false }
+
+}

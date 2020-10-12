@@ -1,0 +1,23 @@
+<?xml version = "1.0"?>
+<bank>
+    <account acn = "001">
+        <firstname>avinash</firstname>
+        <lastname>kumar</lastname>
+        <balance>50000</balance>
+    </account>
+
+    <account acn = "002">
+        <firstname>john</firstname>
+        <lastname>cena</lastname>
+        <balance bal="bal001">
+            <currBal>200</currBal>
+            <checkBal>500</checkBal>
+        </balance>
+    </account>
+
+    <account acn = "003">
+        <firstname>michel</firstname>
+        <lastname>dsouza</lastname>
+        <balance>1000</balance>
+    </account>
+</bank>
